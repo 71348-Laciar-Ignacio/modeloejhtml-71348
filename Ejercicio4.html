@@ -5,13 +5,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/estilo.css">
+  <!-- <link rel="stylesheet" href="/estilo.css"> -->
   <title>Ejercicio 4</title>
 </head>
 
 <body>
   <h2>Ejercicio 4</h2>
-  <h1>Hola como estas</h1>
+
+  <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
+    <span>Nombre:</span> <input type="text" name="nombre">
+    <br>
+    <span>Apellido:</span> <input type="text" name="apellido">
+    <br>
+    <span>Edad:</span> <input type="number" name="edad" id="edad">
+    <br>
+    <span>Contraseña:</span> <input type="password" name="pass" id="pass">
+    <br>
+    <!-- <input type="button" value="agregar" onclick="alert('agregado')"> -->
+    <input type="submit" value="enviar">
+  </form>
+
   <hr>
   <a href="/index.html">Volver</a>
   <br>
