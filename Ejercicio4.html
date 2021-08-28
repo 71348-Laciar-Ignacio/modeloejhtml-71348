@@ -13,7 +13,7 @@
   <h2>Ejercicio 4</h2>
 
   <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
-    <span>Nombre:</span> <input type="text" name="nombre">
+    <span>Nombre:</span> <input type="text" name="nombre" required>
     <br>
     <span>Apellido:</span> <input type="text" name="apellido">
     <br>
@@ -21,10 +21,16 @@
     <br>
     <span>Contraseña:</span> <input type="password" name="pass" id="pass">
     <br>
+
+    <!-- radio buttons -->
+    <input type="radio" name="nacionalidad" value="Argentina" checked>Argentina<br>
+    <input type="radio" name="nacionalidad" value="Uruguay" >Uruguay<br>
+    <input type="radio" name="nacionalidad" value="Brasil" >Brasil<br>
+    <input type="radio" name="nacionalidad" value="Alemania" >Alemania<br>
+
     <!-- <input type="button" value="agregar" onclick="alert('agregado')"> -->
     <input type="submit" value="enviar">
   </form>
-
   <hr>
   <a href="/index.html">Volver</a>
   <br>
